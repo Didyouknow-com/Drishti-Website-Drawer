@@ -12,21 +12,67 @@
 }
 
 .bookcover{
-  width: 150px;
-  height: 200px;
+  width: 200px;
+  height: 300px;
+}
+
+
+.firsttitle{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px
+}
+
+.secondtitle{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px
 }
 
 .carousel{
-  margin: 100px auto;
+  margin: 50px auto;
   width: 90%;
-  border: 5px solid pink;
+  border: 5px solid gray;
   display: flex;
   overflow-x: auto;
   gap:1em;
+  background-color:lightslategrey;
   
 }
 
+.carouselb{
+  margin: 100px auto;
+  width: 90%;
+  border: 5px solid goldenrod;
+  display: flex;
+  overflow-x: auto;
+  gap:1em;
+  background-color: #7e560dbd;
+}
+
+.carouselc{
+  margin: 100px auto;
+  width: 90%;
+  border: 5px solid darkslategray;
+  display: flex;
+  overflow-x: auto;
+  gap:1em;
+  background-color: rgb(102, 153, 153);
+}
+
 .carousel::-webkit-scrollbar {
+  display:none;
+}
+
+.carouselb::-webkit-scrollbar {
+  display:none;
+}
+
+.carouselc::-webkit-scrollbar {
   display:none;
 }
 
@@ -36,24 +82,14 @@
   justify-content: center;
   gap: 1em;
   animation: spin 10s infinite linear;
-  padding-right:1em;
+  padding-right:.5em;
 }
 
-.groupb{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-  animation: spin 10s infinite linear;
-  padding-right:1em;
-  
-}
 
 .card{
   flex: 0 0 auto;
   height: 5em;
   padding: 1em;
-  background: blue;
   font-size: 3rem;
   border-radius: .2em;
   align-content: center;
