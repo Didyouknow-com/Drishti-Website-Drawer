@@ -14,6 +14,7 @@ import PNF from './assets/theprisonerofnightandfog.jpeg'
 import THG from './assets/hungergames.jpeg'
 import DVG from './assets/divergent.jpeg'
 import LGD from './assets/legend.jpeg'
+import UGL from './assets/uglies.jpg'
 import './App.css'
 
 //cd Book_Review
@@ -21,7 +22,6 @@ import './App.css'
 //npm run dev
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -135,7 +135,7 @@ function App() {
           </div>
 
           <div className="card">
-            <img className="bookcover" src={IMBY} />
+            <img className="bookcover" src={UGL} />
           </div>
 
           <div className="card">
@@ -157,7 +157,7 @@ function App() {
           </div>
 
           <div className="card">
-            <img className="bookcover" src={IMBY} />
+            <img className="bookcover" src={UGL} />
           </div>
 
           <div className="card">
