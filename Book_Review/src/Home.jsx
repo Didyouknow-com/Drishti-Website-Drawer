@@ -16,7 +16,7 @@ import DVG from './assets/divergent.jpeg'
 import LGD from './assets/legend.jpeg'
 import UGL from './assets/uglies.jpg'
 import './App.css'
-
+import {Link} from 'react-router-dom'
 //cd Book_Review
 
 //npm run dev
@@ -33,8 +33,11 @@ function Home() {
       <div className='firsttitle'>Mystery</div>
       <div className="carousel">
         <div className="group">
+
           <div className="card">
+            <Link to ="/books/OFUIL">
             <img className="bookcover" src={OFUIL} />
+            </Link>
           </div>
 
           <div className="card">

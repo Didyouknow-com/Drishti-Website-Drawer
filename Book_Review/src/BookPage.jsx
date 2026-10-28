@@ -4,7 +4,10 @@ import { books } from './books'
 function BookPage () {
     const {bookId} = useParams()
 
-    if (!books) {
+
+    const book = books.find((b) => b.id === bookId)
+
+    if (!book) {
         return <h1>Book not found!</h1>
     }
 
@@ -12,15 +15,15 @@ function BookPage () {
 return (
     <div>
         <Link to='/'> Back to Home</Link>
-        <h1>{books.title}</h1>
+        <h1>{book.title}</h1>
 
         <img
-            src={books.image}
-            alt={books.title}
+            src={book.image}
+            alt={book.title}
             className="bookcover"
         />
 
-        <h2>Author: {books.author}</h2>
+        <h2>Author: {book.author}</h2>
 
         <p>{book.description}</p>
 
@@ -32,3 +35,5 @@ return (
 
 )
 }
+
+export default BookPage;
