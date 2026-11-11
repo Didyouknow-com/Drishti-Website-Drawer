@@ -1,6 +1,12 @@
+.box {
+  background-color:rgb(252, 255, 211);
+}
+
+
 .firstbox {
 
   background-color: aquamarine;
+  color: white;
 
 }
 
@@ -23,6 +29,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  color: black;
 }
 
 .secondtitle{
@@ -30,6 +37,15 @@
   align-content: center;
   align-items: center;
   justify-content: center;
+  color: black;
+}
+
+.thirdtitle{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
 
 .carousel{
@@ -56,11 +72,11 @@
 .carouselc{
   margin: 50px auto;
   width: 90%;
-  border: 5px solid darkslategray;
+  border: 5px solid rgb(105, 36, 36);
   display: flex;
   overflow-x: auto;
   gap:1em;
-  background-color: rgb(102, 153, 153);
+  background-color: rgb(127, 27, 22);
 }
 
 .carousel::-webkit-scrollbar {
@@ -80,7 +96,7 @@
   align-items: center;
   justify-content: center;
   gap: 1em;
-  animation: spin 10s infinite linear;
+  animation: spin 12s infinite linear;
   padding-right:.5em;
 }
 
