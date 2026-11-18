@@ -24,7 +24,7 @@ import { Routes, Route } from 'react-router-dom'
 
 //npm run dev
 
-//just for pushing
+//just for
 
 function App() {
 
